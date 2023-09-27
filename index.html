@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI ASSIGNMENT-02</title>
+    
+    <style>
+        body {
+            background-image: url("ghibli.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 48px;
+            background-color: white;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        table.nomor2{
+            margin-left: auto ;
+            margin-right: auto;
+            text-align: left;
+        }
+        fieldset{
+            background-color: beige;
+            background-color: rgba(red, green, blue, alpha);
+            border: 2px solid black;
+        }
+        .image{
+            float: right;
+            margin-right: 20px;
+            margin-top: 12px;
+            
+        }
+        .division{
+            float: right;
+        }
+        .division2{
+            float: left;
+        }
+        .button{
+            display: block;
+    width: 100%;
+    background-color: #ADD8E6;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>L1CC task 2 </h1>
+    <form>
+        <fieldset>
+            <table class="nomor2">
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name" required></td>
+                </tr>
+                <tr>
+                    <td>Class:</td>
+                    <td><input type="text" name="class" required></td>
+                </tr>
+                <tr>
+                    <td>Gender: </td>
+                    <td> <input type="radio" name="gender"> Male <input type="radio" name="gender"> Female</td>
+                </tr>
+                <tr>
+                    <td>Birthdate: </td>
+                    <td> <input type="date" name="date"> </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <br>
+        <div>
+        <fieldset style="width: 680px; margin-left: 25px;" class="division2">
+                <img class="image" src="ghibli2.jpg" alt="Ghbli pics" width="200" >
+                <table>
+                    <h3>Ghibli Questions:</h3>
+                    <tr>
+                        <td>Which ghibli movies do you like?:</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="ghibli1" name="ghibli1" value="totoro">
+                        <label for="ghibli1"> Totoro</label><br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="ghibli2" name="ghibli2" value="kiki">
+                        <label for="ghibli2"> Kiki delivery service</label><br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="ghibli3" name="ghibli3" value="prince">
+                        <label for="ghibli3">Prince Mononoke</label><br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="ghibli4" name="ghibli4" value="howl">
+                        <label for="ghibli4">Howls Moving Castle</label><br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="ghibli5" name="ghibli5" value="spirit">
+                        <label for="ghibli5">Spirited Away</label><br></td>
+                    </tr>
+                </table>
+            <hr style="width:50%;text-align:left;margin-left:0" color="black">
+            <table>
+                <tr>
+                    <td>Why do you enjoy watching ghibli?</td>
+                </tr>
+                <tr>
+                    <td><textarea name="message" id="message" cols="50" rows="4" ></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+    <div class="division">
+        <fieldset style="width: 680px; margin-right: 50px; margin-bottom: 20px;">
+            <!-- <center><h3>Ghibli Characters</h3></center> -->
+            <table border="1px" style="border-collapse: collapse; width: 100%;" >
+                <tr>
+                    <th colspan="2">Ghibli Characters</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <center><th>
+                        Main Character
+                    </th></center>
+                </tr>
+                <tr>
+                    <th rowspan="3">
+                        Totoro
+                    </th>
+                    <td>
+                        Totoro
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Mei
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Satsuki
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="4">
+                        Kiki Delivery Service
+                    </th>
+                    <td>
+                        Kiki
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Jiji
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tombo
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Ursula
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="2">
+                        Prince Mononoke
+                    </th>
+                    <td>
+                        Ashitaka
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        San
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="2">
+                        Howls Moving Castle
+                    </th>
+                    <td>
+                        Howl
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sophie Hatter
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="2">
+                        Spirited Away
+                    </th>
+                    <td>
+                        Haku
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Chihiro
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+    <br>
+    <br>
+    <button type="submit" class="button">Submit</button>
+    </form>
+
+</body>
+</html>
